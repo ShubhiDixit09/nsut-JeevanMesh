@@ -346,7 +346,12 @@ function GoogleMissionMap({
   const overlaysRef = useRef<any[]>([]);
   const [mapReady, setMapReady] = useState(false);
   const [mapError, setMapError] = useState("");
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY?.trim();
+  // Next.js prerender does not expose Vite's import.meta.env. Both builds
+  // retain optional maps support and fall back to the built-in offline map.
+  const apiKey = (
+    process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
+    import.meta.env?.VITE_GOOGLE_MAPS_API_KEY
+  )?.trim();
 
   useEffect(() => {
     let cancelled = false;
