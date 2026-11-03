@@ -1,5 +1,12 @@
 # JeevanMesh Command Center
 
+<!-- LIVE DEPLOYMENT LINK -->
+
+[**Open live JeevanMesh simulation**](https://jeevanmesh-shubhidixit09.vercel.app/)
+
+**Deployment:** Vercel · Interactive disaster-rescue mesh simulation. The prototype models drones and autonomous coordination; it is not connected to physical rescue drones.
+<!-- END LIVE DEPLOYMENT LINK -->
+
 **A leaderless, self-healing rescue swarm for disaster zones where internet and infrastructure cannot be trusted.**
 
 JeevanMesh is an interactive hackathon prototype that simulates autonomous drones coordinating during a Himalayan flash flood. The command center shows live movement, 3D positions, battery levels, peer-to-peer links, survivor confidence, blocked routes, local decision-making, task handoff, delayed data delivery, reconnection and human approval of high-risk actions.
